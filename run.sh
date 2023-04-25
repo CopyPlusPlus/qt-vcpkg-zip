@@ -8,6 +8,7 @@ package_list=(
     "qt5-base"
     "qt5-tools"
     "qt5-translations"
+    "qt5-declarative"
 )
 
 echo "=========================================================="
