@@ -21,7 +21,7 @@ echo "=========================================================="
 echo "=========================================================="
 echo "Export packages"
 echo "=========================================================="
-./vcpkg/vcpkg export ${package_list[@]} --x-all-installed --zip --output-dir=./ --output=my-qt5-libs
+./vcpkg/vcpkg export ${package_list[@]} --zip --output-dir=./ --output=vcpkg-export
 
 echo "=========================================================="
 echo "Done"
