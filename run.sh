@@ -43,7 +43,7 @@ echo "=========================================================="
 echo "=========================================================="
 echo "Export packages"
 echo "=========================================================="
-./vcpkg/vcpkg export ${package_list[@]} --7z --output-dir=./ --output=vcpkg-export
+./vcpkg/vcpkg export ${package_list[@]} --7zip --output-dir=./ --output=vcpkg-export
 
 echo "=========================================================="
 echo "Done"
