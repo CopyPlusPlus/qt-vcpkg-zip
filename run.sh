@@ -1,6 +1,6 @@
 #!/bin/bash
 
-triplet="x64-osx125"
+#triplet="x64-osx125"
 
 package_list=(
     "qt5-base"
@@ -16,11 +16,13 @@ echo "=========================================================="
 echo "Set environment variables"
 echo "=========================================================="
 
-echo "export VCPKG_DEFAULT_HOST_TRIPLET=${triplet}"
-export VCPKG_DEFAULT_HOST_TRIPLET=${triplet}
+#echo "export VCPKG_DEFAULT_HOST_TRIPLET=${triplet}"
+#export VCPKG_DEFAULT_HOST_TRIPLET=${triplet}
 
-echo "export VCPKG_DEFAULT_TRIPLET=${triplet}"
-export VCPKG_DEFAULT_TRIPLET=${triplet}
+#echo "export VCPKG_DEFAULT_TRIPLET=${triplet}"
+#export VCPKG_DEFAULT_TRIPLET=${triplet}
+
+export MACOSX_DEPLOYMENT_TARGET=12.5
 
 echo "=========================================================="
 echo "Bootstrap vcpkg"
@@ -33,12 +35,12 @@ echo "package_list: ${package_list[@]}"
 echo "=========================================================="
 echo "Copy triplet file to vcpkg/triplets"
 echo "=========================================================="
-cp ./${triplet}.cmake ./vcpkg/triplets/
+#cp ./${triplet}.cmake ./vcpkg/triplets/
 
 echo "=========================================================="
 echo "Install packages"
 echo "=========================================================="
-./vcpkg/vcpkg install ${package_list[@]} --clean-after-build
+./vcpkg/vcpkg install ${package_list[@]}
 
 echo "=========================================================="
 echo "Export packages"
