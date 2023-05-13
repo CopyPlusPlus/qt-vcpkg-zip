@@ -10,6 +10,7 @@ package_list=(
 echo "=========================================================="
 echo "Update submodules"
 echo "=========================================================="
+#TODO: Set vcpkg baseline, i.e. git commit hash
 git submodule update --init
 
 echo "=========================================================="
