@@ -22,7 +22,8 @@ echo "=========================================================="
 #echo "export VCPKG_DEFAULT_TRIPLET=${triplet}"
 #export VCPKG_DEFAULT_TRIPLET=${triplet}
 
-export MACOSX_DEPLOYMENT_TARGET=12.5
+# not usefull
+#export MACOSX_DEPLOYMENT_TARGET=12.5
 
 echo "=========================================================="
 echo "Bootstrap vcpkg"
